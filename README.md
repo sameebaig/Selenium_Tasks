@@ -15,6 +15,8 @@ The framework automates end-to-end testing for web applications — such as logi
 
 ## Framework Structure
 
+---
+
 Selenium_Tasks/
 │
 ├── pom.xml
@@ -54,7 +56,8 @@ Selenium_Tasks/
 │
 └── drivers/
     ├── chromedriver.exe
-    
+
+---
 
 ### Features
 
@@ -95,13 +98,12 @@ password=secret_sauce
 ```bash
 mvn test
 ```
-
-## View TestNG reports
-
 Reports are generated in:
+
 ---
 test-output/index.html
 ---
+
 Test results are saved automatically for each tests.
 
 ### Example Test Scenarios
