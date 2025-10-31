@@ -15,29 +15,27 @@ The framework automates end-to-end testing for web applications — such as logi
 
 ## Framework Structure
 
----
-
+```
 Selenium_Tasks/
-│
-├── pom.xml
-├── README.md
-├── testng.xml
+├── pom.xml                     # Maven dependencies (Selenium, TestNG, etc.)
+├── README.md                   # Project documentation
+├── testng.xml                  # TestNG suite configuration
 │
 ├── config/
-│   └── config.properties
+│   └── config.properties        # Browser, URL, credentials, DB info, etc.
 │
 ├── src/
 │   ├── main/
 │   │   └── java/
 │   │       ├── base/
-│   │       │   └── BaseTest.java
+│   │       │   └── BaseTest.java              # Common setup/teardown logic
 │   │       │
-│   │       ├── pages/
+│   │       ├── pages/                         # Page Object Model classes
 │   │       │   ├── LoginPage.java
 │   │       │   ├── DashboardPage.java
 │   │       │   └── CartPage.java
 │   │       │
-│   │       └── utils/
+│   │       └── utils/                         # Utility or helper classes
 │   │           ├── DBConnection.java
 │   │           ├── ConfigReader.java
 │   │           ├── ReportManager.java
@@ -45,19 +43,18 @@ Selenium_Tasks/
 │   │
 │   └── test/
 │       └── java/
-│           └── tests/
+│           └── tests/                         # All TestNG test classes
 │               ├── DashboardTest.java
 │               ├── LoginTest.java
 │               └── DBTest.java
 │
 ├── reports/
-│   ├── test-output/
-│   └── extent-reports/
+│   ├── test-output/                           # Default TestNG reports
+│   └── extent-reports/                        # Custom Extent reports (optional)
 │
 └── drivers/
-    ├── chromedriver.exe
-
----
+    └── chromedriver.exe
+```
 
 ### Features
 
@@ -72,11 +69,11 @@ Selenium_Tasks/
 
 ### 🧰 Tools & Dependencies
 
-* **Java 11+**
-* **Selenium 4.x**
-* **TestNG 7.x**
-* **MySQL JDBC Driver**
-* **Maven**
+* Java 11
+* Selenium 4.x
+* TestNG 7.x
+* MySQL JDBC Driver
+* Maven
 
 ---
 
@@ -108,6 +105,6 @@ Test results are saved automatically for each tests.
 
 ### Example Test Scenarios
 
-* **sortAndValidateCartItems** → Verifies sorting, adds two cheapest items, and validates totals.
-* **aboutPageAndFacebookCheck** → Navigates to “About” page and verifies the Facebook link.
+* sortAndValidateCartItems → Verifies sorting, adds two cheapest items, and validates totals.
+* aboutPageAndFacebookCheck → Navigates to “About” page and verifies the Facebook link.
 
