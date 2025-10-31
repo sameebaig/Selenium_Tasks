@@ -13,48 +13,48 @@ This **Selenium Framework** built using:
 
 The framework automates end-to-end testing for web applications — such as login, sorting, cart validation, and menu navigation.
 
-### Project Structure
+## Framework Structure
 
 Selenium_Tasks/
 │
-├── pom.xml                            # Maven dependencies (Selenium, TestNG, etc.)
-├── README.md                          # Project documentation
-├── testng.xml                         # TestNG suite configuration
+├── pom.xml
+├── README.md
+├── testng.xml
 │
 ├── config/
-│   └── config.properties              # Browser, URL, credentials, DB info, etc.
+│   └── config.properties
 │
 ├── src/
 │   ├── main/
 │   │   └── java/
 │   │       ├── base/
-│   │       │   └── BaseTest.java      # Common setup/teardown logic
+│   │       │   └── BaseTest.java
 │   │       │
-│   │       ├── pages/                 # Page Object Model classes
+│   │       ├── pages/
 │   │       │   ├── LoginPage.java
-│   │       │   └── DashboardPage.java
+│   │       │   ├── DashboardPage.java
 │   │       │   └── CartPage.java
-│   │       └── utils/                 # Utility or helper classes
+│   │       │
+│   │       └── utils/
 │   │           ├── DBConnection.java
-│   │           └── ConfigReader.java
-│   │           └── ReportManager.java
-|   |           └── ScreenShorts.java
-|   |
+│   │           ├── ConfigReader.java
+│   │           ├── ReportManager.java
+│   │           └── ScreenShots.java
+│   │
 │   └── test/
 │       └── java/
-│           └── tests/                 # All TestNG test classes
+│           └── tests/
 │               ├── DashboardTest.java
 │               ├── LoginTest.java
-│               └── DBTest.java (if needed)
+│               └── DBTest.java
 │
-├── reports/                           # (Optional) For saving generated reports
-│   ├── test-output/                   # Default TestNG reports
-│   └── extent-reports/                # Custom Extent reports (if added later)
+├── reports/
+│   ├── test-output/
+│   └── extent-reports/
 │
-└── drivers/                           # (Optional) For keeping WebDriver binaries
+└── drivers/
     ├── chromedriver.exe
-    └── 
----
+    
 
 ### Features
 
